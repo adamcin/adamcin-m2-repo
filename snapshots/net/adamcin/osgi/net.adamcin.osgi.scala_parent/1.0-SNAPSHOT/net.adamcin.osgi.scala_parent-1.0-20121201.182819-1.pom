@@ -1,0 +1,68 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.adamcin.osgi</groupId>
+	<artifactId>net.adamcin.osgi.scala_parent</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<repositories>
+		<repository>
+			<id>scala-tools.org</id>
+			<name>Scala-tools Maven2 Repository</name>
+			<url>https://oss.sonatype.org/content/groups/scala-tools/</url>
+		</repository>
+	</repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>scala-tools.org</id>
+            <name>Scala-Tools Maven2 Repository</name>
+            <url>https://oss.sonatype.org/content/groups/scala-tools/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.felix</groupId>
+					<artifactId>maven-bundle-plugin</artifactId>
+					<version>2.3.5</version>
+					<executions>
+						<execution>
+							<id>default-bundle</id>
+							<configuration>
+								<instructions>
+									<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+									<_exportcontents>
+										scala.*;version=${scala.version}
+									</_exportcontents>
+									<Import-Package>
+										*;resolution:=optional
+									</Import-Package>
+									<Embed-Dependency>*;scope=compile|runtime;inline=false</Embed-Dependency>	
+								</instructions>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>net.adamcin.maven</groupId>
+					<artifactId>vltpack-maven-plugin</artifactId>
+					<version>1.0-SNAPSHOT</version>
+					<configuration>
+						<bundleInstallPath>/apps/scala/install</bundleInstallPath>
+					</configuration>
+					<executions>
+						<execution>
+							<goals>
+								<goal>put-bundle</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+</project>

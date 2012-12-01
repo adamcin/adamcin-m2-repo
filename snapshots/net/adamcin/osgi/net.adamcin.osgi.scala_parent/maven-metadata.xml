@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>net.adamcin.osgi</groupId>
+  <artifactId>net.adamcin.osgi.scala_parent</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20121201183055</lastUpdated>
+  </versioning>
+</metadata>
