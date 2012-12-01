@@ -6,5 +6,10 @@
       <prefix>snagjar</prefix>
       <artifactId>snagjar-maven-plugin</artifactId>
     </plugin>
+    <plugin>
+      <name>VLT Pack Maven Plugin</name>
+      <prefix>vltpack</prefix>
+      <artifactId>vltpack-maven-plugin</artifactId>
+    </plugin>
   </plugins>
 </metadata>
