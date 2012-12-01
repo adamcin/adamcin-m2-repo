@@ -11,14 +11,14 @@ Add the following repositories to your settings.xml:
                         <enabled>false</enabled>
                     </snapshots>
                     <id>adamcin-m2-repo</id>
-					<url>https://github.org/adamcin/adamcin-m2-repo/raw/master/releases/</url>
+                    <url>https://github.com/adamcin/adamcin-m2-repo/raw/master/releases/</url>
                 </repository>
                 <repository>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
                     <id>adamcin-m2-repo</id>
-					<url>https://github.org/adamcin/adamcin-m2-repo/raw/master/snapshots/</url>
+                    <url>https://github.com/adamcin/adamcin-m2-repo/raw/master/snapshots/</url>
                 </repository>
             </repositories>
             <pluginRepositories>
@@ -27,13 +27,13 @@ Add the following repositories to your settings.xml:
                         <enabled>false</enabled>
                     </snapshots>
                     <id>adamcin-m2-repo</id>
-					<url>https://github.org/adamcin/adamcin-m2-repo/raw/master/releases/</url>
+                    <url>https://github.com/adamcin/adamcin-m2-repo/raw/master/releases/</url>
                 </pluginRepository>
                 <pluginRepository>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
                     <id>adamcin-m2-repo</id>
-					<url>https://github.org/adamcin/adamcin-m2-repo/raw/master/snapshots/</url>
+                    <url>https://github.com/adamcin/adamcin-m2-repo/raw/master/snapshots/</url>
                 </pluginRepository>
             </pluginRepositories>
