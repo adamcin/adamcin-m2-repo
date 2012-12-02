@@ -10,15 +10,15 @@ Add the following repositories to your settings.xml:
                     <snapshots>
                         <enabled>false</enabled>
                     </snapshots>
-                    <id>repo</id>
 					<url>http://adamcin.net/repo/releases/</url>
+                    <id>adamcin-m2-repo</id>
                 </repository>
                 <repository>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
-                    <id>repo</id>
 					<url>http://adamcin.net/repo/snapshots/</url>
+                    <id>adamcin-m2-repo</id>
                 </repository>
             </repositories>
             <pluginRepositories>
@@ -26,14 +26,14 @@ Add the following repositories to your settings.xml:
                     <snapshots>
                         <enabled>false</enabled>
                     </snapshots>
-                    <id>repo</id>
 					<url>http://adamcin.net/repo/releases/</url>
+                    <id>adamcin-m2-repo</id>
                 </pluginRepository>
                 <pluginRepository>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
-                    <id>repo</id>
 					<url>http://adamcin.net/repo/snapshots/</url>
+                    <id>adamcin-m2-repo</id>
                 </pluginRepository>
             </pluginRepositories>
